@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-19 18:04:39.709881",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_main_event",
+  "sub_event",
+  "knockout_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_event",
+   "fieldtype": "Link",
+   "label": "Sub Event",
+   "options": "SubEvent"
+  },
+  {
+   "default": "0",
+   "fetch_from": "sub_event.knockouts",
+   "fieldname": "knockout_value",
+   "fieldtype": "Check",
+   "label": "Is Knockout",
+   "read_only": 1
+  },
+  {
+   "fieldname": "select_main_event",
+   "fieldtype": "Link",
+   "label": "Select Main Event",
+   "options": "MainEvent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-20 17:24:38.137713",
+ "modified_by": "Administrator",
+ "module": "Ems",
+ "name": "SubEventFormat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

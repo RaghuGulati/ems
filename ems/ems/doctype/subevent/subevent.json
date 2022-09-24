@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-19 00:10:05.170992",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event",
+  "sevent",
+  "knockouts",
+  "no_of_participants",
+  "no_of_accompanists",
+  "event_manager",
+  "judges"
+ ],
+ "fields": [
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Event",
+   "options": "MainEvent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sevent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "knockouts",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Knockouts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_of_participants",
+   "fieldtype": "Int",
+   "label": "No of participants",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "no_of_accompanists",
+   "fieldtype": "Int",
+   "label": "No of accompanists",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "event_manager",
+   "fieldtype": "Data",
+   "label": "Event Manager"
+  },
+  {
+   "fieldname": "judges",
+   "fieldtype": "Table",
+   "label": "Judges",
+   "options": "Judges"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-19 01:16:42.584340",
+ "modified_by": "Administrator",
+ "module": "Ems",
+ "name": "SubEvent",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

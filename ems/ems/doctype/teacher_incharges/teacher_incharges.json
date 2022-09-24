@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-20 18:36:10.517840",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team",
+  "name1",
+  "photo",
+  "id_card"
+ ],
+ "fields": [
+  {
+   "fieldname": "team",
+   "fieldtype": "Data",
+   "label": "Team",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "id_card",
+   "fieldtype": "Image",
+   "label": "ID Card"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-20 18:36:10.517840",
+ "modified_by": "Administrator",
+ "module": "Ems",
+ "name": "Teacher Incharges",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

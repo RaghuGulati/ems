@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "creation": "2022-09-19 13:01:37.902337",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team_name",
+  "select_main_event",
+  "no_of_participants",
+  "pdetails",
+  "no_of_teachers",
+  "tdetails",
+  "select_sub_event"
+ ],
+ "fields": [
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "label": "Team Name"
+  },
+  {
+   "fieldname": "select_main_event",
+   "fieldtype": "Link",
+   "label": "Select Main Event",
+   "options": "MainEvent"
+  },
+  {
+   "fieldname": "no_of_participants",
+   "fieldtype": "Int",
+   "label": "No of Participants",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "no_of_teachers",
+   "fieldtype": "Int",
+   "label": "No of Teachers ",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "pdetails",
+   "fieldtype": "Table",
+   "label": "Enter Participants Details",
+   "options": "Participants"
+  },
+  {
+   "fieldname": "tdetails",
+   "fieldtype": "Table",
+   "label": "Enter Teachers Details",
+   "options": "Teacher Incharges"
+  },
+  {
+   "fieldname": "select_sub_event",
+   "fieldtype": "Table",
+   "label": "Select Sub Event",
+   "options": "SelectSubEvent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-21 11:51:37.694498",
+ "modified_by": "Administrator",
+ "module": "Ems",
+ "name": "TeamRegistration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

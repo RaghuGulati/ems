@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-20 16:03:17.108520",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_event",
+  "team",
+  "judges_pt"
+ ],
+ "fields": [
+  {
+   "fieldname": "team",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team"
+  },
+  {
+   "fieldname": "judges_pt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Points Given by Judges"
+  },
+  {
+   "fieldname": "sub_event",
+   "fieldtype": "Data",
+   "label": "Sub Event",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-20 17:50:06.906290",
+ "modified_by": "Administrator",
+ "module": "Ems",
+ "name": "Schedule",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

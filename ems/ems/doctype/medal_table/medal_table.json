@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-21 16:23:51.737123",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "main_event",
+  "team",
+  "gold_medals",
+  "silver_medals",
+  "bronze_medals"
+ ],
+ "fields": [
+  {
+   "fieldname": "main_event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Select Main Event",
+   "options": "MainEvent"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Select Team",
+   "options": "TeamRegistration"
+  },
+  {
+   "fieldname": "gold_medals",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gold Medals",
+   "read_only": 1
+  },
+  {
+   "fieldname": "silver_medals",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Silver Medals",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bronze_medals",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bronze Medals",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-21 19:12:24.799778",
+ "modified_by": "Administrator",
+ "module": "Ems",
+ "name": "Medal Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
