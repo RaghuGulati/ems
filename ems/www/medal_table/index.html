@@ -1,0 +1,99 @@
+{% extends 'templates/template.html' %}
+
+{% block heading %}
+    Medal Table
+{% endblock %}      
+
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Management System</title>
+    <style type="text/css">
+        * {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: lightyellow;
+}
+    </style>
+</head>
+<body>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter by events..." title="Type in a name">
+    <table id = "myTable" class="table table-bordered">
+        <thead>
+                <tr>
+                    <th style="width: 20%; text-align:center">Main Event</th>
+                    <th style="width: 20%; text-align:center">Team Name</th>
+                    <th style="width: 20%; text-align:center">Gold Medals</th>
+                    <th style="width: 20%; text-align:center">Silver Medals</th>
+                    <th style="width: 20%; text-align:center">Bronze Medals</th>
+                </tr>
+        </thead>
+        <tbody>
+            {% set entries = frappe.get_all(
+                'Medal Table', 
+                fields = ['main_event', 'team', 'gold_medals', 'silver_medals', 'bronze_medals']) 
+            %}
+            {% for e in entries %}
+                <tr>
+                    <td>{{ e.main_event }}</td>
+                    <td>{{ e.team }}</td>
+                    <td style="text-align:center">{{ e.gold_medals }}</td>                    
+                    <td style="text-align:center">{{ e.silver_medals }}</td>
+                    <td style="text-align:center">{{ e.bronze_medals }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+</table>
+<script type="text/javascript">
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</body>
+
+{% endblock %}
+

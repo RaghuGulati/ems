@@ -1,5 +1,7 @@
 {
+ "_liked_by": "[\"Administrator\"]",
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "creation": "2022-09-21 16:23:51.737123",
  "doctype": "DocType",
@@ -54,9 +56,8 @@
    "read_only": 1
   }
  ],
- "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-21 19:12:24.799778",
+ "modified": "2022-09-29 12:47:06.308814",
  "modified_by": "Administrator",
  "module": "Ems",
  "name": "Medal Table",

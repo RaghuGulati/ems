@@ -1,19 +1,6 @@
-from setuptools import setup, find_packages
+# TODO: Remove this file when bench >=v5.11.0 is adopted / v15.0.0 is released
+from setuptools import setup
 
-with open("requirements.txt") as f:
-	install_requires = f.read().strip().split("\n")
+name = "frappe"
 
-# get version from __version__ variable in ems/__init__.py
-from ems import __version__ as version
-
-setup(
-	name="ems",
-	version=version,
-	description="event management system",
-	author="RG",
-	author_email="rg@rg.com",
-	packages=find_packages(),
-	zip_safe=False,
-	include_package_data=True,
-	install_requires=install_requires
-)
+setup()
