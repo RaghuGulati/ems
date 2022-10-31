@@ -21,7 +21,9 @@ We have implemented these features using various doctypes.
 
 Now let us see these features in details. Here an event named Intercollege Table Tennis Tournament has been created and managed through this app so you will be able to get an idea about the work flow of this system
 
-<b>Note:</b> In the following doctypes, there are various instances where sub events and teams are filtered as per the main event selected by the user, this has been done in js (client side scripting) and is available in the repository at .js file in ems/ems/doctype/doctype_name folder. Simiplarly python scripting has been done in .py files present in the same location
+<b>Note:</b> <br>
+-In the following doctypes, there are various instances where sub events and teams are filtered as per the main event selected by the user, this has been done in js (client side scripting) and is available in the repository at .js file in ems/ems/doctype/doctype_name folder. Simiplarly python scripting has been done in .py files present in the same location<br>
+-There are various tables present in doctypes such as Judges table in SubEvent doctype, Teachers Details and Select Sub Event in TeamRegistration etc there are actually different doctypes in which <b>is child table</b> is enabled and parent table is mentioned. Thus it will not act as independent doctype but will take the input in parent table itself.
 
 - <b>Main Event:</b><br>
 Doctype: MainEvent
