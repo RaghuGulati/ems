@@ -21,10 +21,12 @@ We have implemented these features using various doctypes.
 
 Now let us see these features in details. Here an event named Intercollege Table Tennis Tournament has been created and managed through this app so you will be able to get an idea about the work flow of this system
 
-<b>Note:</b> <br>
--In the following doctypes, there are various instances where sub events and teams are filtered as per the main event selected by the user, this has been done in js (client side scripting) and is available in the repository at .js file in ems/ems/doctype/doctype_name folder. Simiplarly python scripting has been done in .py files present in the same location<br>
--There are various tables present in doctypes such as Judges table in SubEvent doctype, Teachers Details and Select Sub Event in TeamRegistration etc there are actually different doctypes in which <b>is child table</b> is enabled and parent table is mentioned. Thus it will not act as independent doctype but will take the input in parent table itself.
+<b>Note:</b><br>
+- In the following doctypes, there are various instances where sub events and teams are filtered as per the main event selected by the user, this has been done in js (client side scripting) and is available in the repository at .js file in ems/ems/doctype/doctype_name folder. Simiplarly python scripting has been done in .py files present in the same location<br>
+- There are various tables present in doctypes such as Judges table in SubEvent doctype, Teachers Details and Select Sub Event in TeamRegistration etc there are actually different doctypes in which <b>is child table</b> is enabled and parent table is mentioned. Thus it will not act as independent doctype but will take the input in parent doctype itself.
 
+-----------------------------------------------------------------------
+### Let's Start features in details
 - <b>Main Event:</b><br>
 Doctype: MainEvent
 ![2](https://user-images.githubusercontent.com/45628486/198984496-8690bc7a-5dc1-429c-8e4d-091a568b982d.jpeg)
@@ -52,6 +54,20 @@ Doctype: SubEventFormat
 
 - <b>Medals per sub events:</b><br>
 Doctype: SubEventWiseMedals
+![13](https://user-images.githubusercontent.com/45628486/199006700-f551ee3c-bba4-4478-82e1-c105747feeae.jpeg)
+![14](https://user-images.githubusercontent.com/45628486/199006713-12b6fdb2-a318-41da-b32a-bfdc5c8e614e.jpeg)
 
 - <b>Medal Tally:</b><br>
 Doctype: Medal Table
+![15](https://user-images.githubusercontent.com/45628486/199006904-1c006280-d49b-43b5-83eb-f3702aa3445f.jpeg)
+![16](https://user-images.githubusercontent.com/45628486/199006981-1dfef839-b755-41cc-9859-a50f119af65c.jpeg)
+
+-------------------------------------------------------------------------------
+Now let us see the various child doctypes used:
+
+![18](https://user-images.githubusercontent.com/45628486/199007501-bf743bdc-f741-49ea-869b-115b21ca9e2c.jpeg)
+![19](https://user-images.githubusercontent.com/45628486/199007507-76f22fb4-a3f9-40e2-9806-e4cfc0a011c1.jpeg)
+![20](https://user-images.githubusercontent.com/45628486/199007524-74d47ce2-dc44-4acf-a062-cc1a249bd1a4.jpeg)
+![21](https://user-images.githubusercontent.com/45628486/199007533-70b1af9e-ee91-4048-8671-a171a3a03f0a.jpeg)
+![22](https://user-images.githubusercontent.com/45628486/199007549-8dfbaab8-0bbf-4b73-b0d6-6d0746403b97.jpeg)
+![23](https://user-images.githubusercontent.com/45628486/199007563-d694ee78-73b1-4ae7-a419-0aa23e7bfac3.jpeg)
