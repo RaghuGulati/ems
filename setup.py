@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
     install_requires = f.read().strip().split("\n")
 
 # get version from __version__ variable in test2/__init__.py
-from test2 import __version__ as version
+from ems import __version__ as version
 
 setup(
     name="ems",
