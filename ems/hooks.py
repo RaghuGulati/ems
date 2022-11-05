@@ -7,6 +7,8 @@ app_description = "event management system"
 app_email = "rg@rg.com"
 app_license = "MIT"
 
+fixtures = ["Custom Field"]
+
 # Includes in <head>
 # ------------------
 
