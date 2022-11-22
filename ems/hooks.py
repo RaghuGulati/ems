@@ -8,7 +8,9 @@ app_email = "rg@rg.com"
 app_license = "MIT"
 
 fixtures = ["Custom Field"]
+after_install = "ems.setup.install.after_install"
 
+#app.setup.install.after_install
 # Includes in <head>
 # ------------------
 
